@@ -1,0 +1,23 @@
+---
+title: Projects
+subtitle: My works and tinkering at a glance
+description: My works and tinkering at a glance
+bgType: dot
+toc: true
+ogImage: false
+---
+
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import WideLayout from '~/layouts/WideLayout.astro'
+import GroupView from '~/components/views/GroupView.astro'
+
+<BaseLayout
+  title={frontmatter.title}
+  description={frontmatter.description}
+  bgType={frontmatter.bgType}
+  ogImage={frontmatter.ogImage}
+>
+  <WideLayout title={frontmatter.title} subtitle={frontmatter.subtitle}>
+    <GroupView pageToc={frontmatter.toc} />
+  </WideLayout>
+</BaseLayout>

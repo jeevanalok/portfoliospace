@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../.astro/collections/projects.schema.json",
+  "projects": {
+    "WebApps": [
+      {
+        "name": "MindSketch",
+        "link": "https://github.com/jeevanalok/mindsketch",
+        "desc": "Integrated a feature-rich intuitive whiteboard canvas with Notion like text editor "
+      },
+      {
+        "name": "TLDR-It",
+        "link": "https://github.com/jeevanalok/tldr-it",
+        "desc": "A webapp based on open ai's api takes in a article url or a text and gives concise summary of article"
+      },
+      {
+        "name": "ForexXchangePro: ",
+        "link": "https://github.com/jeevanalok/forex-exchange",
+        "desc": "Empowering Financial Decisions with Real-Time Forex Data"
+      },
+      {
+        "name": "Task Tide: ",
+        "link": "https://github.com/jeevanalok/forex-exchange",
+        "desc": "Prioritise task with Eisenhower matrix"
+      }
+    ],
+    "Games": [
+      {
+        "name": "Send Supplies",
+        "link": "https://github.com/jeevanalok/Send-Supplies",
+        "desc": "game made with pygame to collect loots avoiding bombs"
+      },
+      {
+        "name": "Iron Man",
+        "link": "https://github.com/jeevanalok/IRON_MAN-GAME",
+        "desc": "become iron man, defeat bad guys. "
+      }
+    ],
+    "Animations": [
+      {
+        "name": "HandTrackFractals",
+        "link": "https://github.com/jeevanalok/HandTrackFractals",
+        "desc": "Interactive Fractal Tree Generator with Hand Tracking"
+      },
+      {
+        "name": "Monte Carlo Simulation",
+        "link": "https://github.com/jeevanalok/estimating-pi-using-monte-carlo-simulation",
+        "desc": "estimating-pi-using-monte-carlo-simulation"
+      }
+    ]
+  }
+}

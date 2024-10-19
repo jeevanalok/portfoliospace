@@ -1,0 +1,24 @@
+---
+title: 'About Me'
+subtitle: ''
+description: 'My professional life in an nutshell'
+bgType: particle
+toc: false
+ogImage: false
+---
+
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import StandardLayout from '~/layouts/StandardLayout.astro'
+import RenderPost from '~/components/views/RenderPost.astro'
+
+<BaseLayout
+  title={frontmatter.title}
+  description={frontmatter.description}
+  bgType={frontmatter.bgType}
+  ogImage={frontmatter.ogImage}
+>
+  <StandardLayout title={frontmatter.title} subtitle={frontmatter.subtitle}>
+    <RenderPost pageToc={frontmatter.toc} collectionType="about" slug="about" />
+
+  </StandardLayout>
+</BaseLayout>
