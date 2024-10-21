@@ -17,7 +17,7 @@ import RenderPost from '~/components/views/RenderPost.astro'
   bgType={frontmatter.bgType}
   ogImage={frontmatter.ogImage}
 >
-  <StandardLayout title={frontmatter.title} subtitle={frontmatter.subtitle}>
+  <StandardLayout title={frontmatter.title} subtitle={frontmatter.subtitle} isSearchable={true}>
     <RenderPost pageToc={frontmatter.toc} collectionType="about" slug="about" />
 
   </StandardLayout>

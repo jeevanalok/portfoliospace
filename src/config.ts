@@ -77,13 +77,13 @@ export const FEATURES: Features = {
     true,
     {
       twitter: [true, ''],
-      mastodon: [true, ''],
+      mastodon: false,
       facebook: false,
       pinterest: false,
       reddit: false,
       telegram: false,
-      whatsapp: false,
-      email: false,
+      whatsapp: true,
+      email: true,
     },
   ],
   toc: [
