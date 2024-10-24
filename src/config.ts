@@ -27,6 +27,13 @@ export const UI: Ui = {
       icon: 'i-simple-icons-aboutdotme',
     },
     {
+      path: '/tags',
+      title: 'Tags',
+      displayMode: 'textToIconOnMobile',
+      text: 'Tags',
+      icon: 'i-mdi-tags',
+    },
+    {
       path: '/projects',
       title: 'Projects',
       displayMode: 'textToIconOnMobile',
@@ -50,13 +57,7 @@ export const UI: Ui = {
   ],
   navBarLayout: {
     left: [],
-    right: [
-      'internalNavs',
-      'socialLinks',
-      'searchButton',
-      'themeButton',
-      'rssLink',
-    ],
+    right: ['internalNavs', 'socialLinks', 'searchButton', 'themeButton'],
   },
   tabbedLayoutTabs: [
     { title: 'AstroBlog', path: '/feeds' },

@@ -6,6 +6,10 @@ lastModDate: ''
 toc: true
 share: true
 ogImage: true
+tags:
+  - scifi
+  - story
+  - gametheory
 ---
 
 

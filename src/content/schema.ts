@@ -126,6 +126,10 @@ export const postSchema = z.object({
     .describe(
       'Marks the post as a draft. If `true`, it is only visible in development and excluded from production builds.'
     ),
+  tags: z
+    .array(z.string())
+    .default(['others'])
+    .describe('defines the tags associated with the post'),
 })
 
 export type PostSchema = z.infer<typeof postSchema>

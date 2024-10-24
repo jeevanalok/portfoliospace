@@ -6,6 +6,10 @@ lastModDate: ''
 toc: true
 share: true
 ogImage: true
+tags:
+  - braindump
+  - scifi
+
 ---
 > To be or not to be is not a question in quantum world but a proposition -Sir Jeevan choosing his wardrobe
 

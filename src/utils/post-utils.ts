@@ -32,3 +32,20 @@ export function getSortedPosts(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
   )
 }
+
+/**
+ * Retrieves filtered posts from the specified content collection on the basis of tags.
+ *  *
+ * @async
+ * @param {string} tag
+ *  The tag to filter upon.
+ * @returns {CollectionEntry<ContentCollectionKey>[]}
+ *  A promise that resolves to the filtered posts.
+ */
+export async function getBlogsWithTag(
+  tag: string
+): Promise<CollectionEntry<ContentCollectionKey>[]> {
+  const allPosts = await getCollection('blog')
+  const filteredPosts = allPosts.filter((post) => post.data.tags.includes(tag))
+  return filteredPosts
+}

@@ -5,7 +5,11 @@ import ListItem from '~/components/views/ListItem.astro'
 import Toc from '~/components/toc/Toc.astro'
 import Warning from '~/components/base/Warning.astro'
 import { isSameYear, getYear } from '~/utils/datetime-utils'
-import { getFilteredPosts, getSortedPosts } from '~/utils/post-utils'
+import {
+  getFilteredPosts,
+  getSortedPosts,
+  getBlogsWithTag,
+} from '~/utils/post-utils'
 import { FEATURES } from '~/config'
 
 import type {
@@ -18,9 +22,10 @@ import type { StreamGroupsSchema } from '~/content/schema'
 interface Props {
   collectionType: ContentCollectionKey | DataCollectionKey
   pageToc: boolean
+  tag: string | null
 }
 
-const { collectionType, pageToc } = Astro.props
+const { collectionType, pageToc, tag } = Astro.props
 const validCollectionType = ['blog', 'changelog', 'streams', 'feeds']
 
 /* Toc */
@@ -32,8 +37,13 @@ let years: string[] = []
 let blogItems: CollectionEntry<ContentCollectionKey>[]
 let sortedBlogItems: CollectionEntry<ContentCollectionKey>[] = []
 
-if (collectionType === 'blog' || collectionType === 'changelog') {
-  blogItems = await getFilteredPosts(collectionType)
+if (collectionType === 'blog') {
+  if (tag) {
+    blogItems = await getBlogsWithTag(tag)
+  } else {
+    blogItems = await getFilteredPosts(collectionType)
+  }
+
   sortedBlogItems = getSortedPosts(blogItems)
 
   if (tocEnabled) {
@@ -111,7 +121,7 @@ const warningHTML = `The '${collectionType}' collection type does not
 {tocEnabled && <Toc {years} />}
 
 {
-  (collectionType === 'blog' || collectionType === 'changelog') && (
+  collectionType === 'blog' && (
     <ul aria-label="Post list">
       {sortedBlogItems.length === 0 ? (
         <div class="py-2 op-50">nothing here yet</div>

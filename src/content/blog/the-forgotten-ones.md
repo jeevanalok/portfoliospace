@@ -6,6 +6,9 @@ lastModDate: ''
 toc: true
 share: true
 ogImage: true
+tags: 
+   - story
+
 ---
 
 

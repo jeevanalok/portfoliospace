@@ -6,6 +6,8 @@ lastModDate: ''
 toc: true
 share: true
 ogImage: true
+tags:
+  - braindump
 ---
 
 ## Introduction

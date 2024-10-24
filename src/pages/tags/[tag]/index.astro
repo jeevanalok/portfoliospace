@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content'
+import ListView from '~/components/views/ListView.astro'
+import BaseLayout from '~/layouts/BaseLayout.astro'
+import StandardLayout from '~/layouts/StandardLayout.astro'
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog')
+  const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())]
+
+  return uniqueTags.map((tag) => {
+    return {
+      params: { tag },
+    }
+  })
+}
+
+const { tag } = Astro.params
+
+const frontmatter = {
+  title: `Tag: ${tag}`,
+  description: `All the articles with the tag ${tag}`,
+  subtitle: `All the articles with the tag ${tag}`,
+  ogImage: false,
+  toc: false,
+}
+---
+
+<BaseLayout
+  title={'Tags'}
+  description={frontmatter.description}
+  ogImage={frontmatter.ogImage}
+>
+  <StandardLayout title={frontmatter.title} subtitle={frontmatter.subtitle}>
+    <ListView pageToc={frontmatter.toc} collectionType="blog" {tag} />
+  </StandardLayout>
+</BaseLayout>
