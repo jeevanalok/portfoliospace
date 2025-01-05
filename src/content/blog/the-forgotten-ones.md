@@ -12,7 +12,7 @@ tags:
 ---
 
 
-![the ruins](~/assets/the-forgotten-ones/cover.webp)
+![the ruins](../../assets/the-forgotten-ones/cover.webp)
 
 ## The Slumber of Kings
 Devidutta looked at his notes, placing the compass by his side. The other members of his archaeological expedition squinted their eyes as Devidutta was engrossed in his deep thoughts. After a quick lapse, Devidutta asked the guide to move the caravan towards a certain direction. The guide suggested to take a detour as there was a sandstorm alert issued by the authority but Devidutta was adamant. What was so special about this place asked the team. Devidutta grinned and spoke in a steadfast manner that what we are looking for is a special tomb, tomb of a great king, forgotten by records, swallowed by the sands. The team comprising of 2 fellow archaeologist and a local guide supposedly the best in Egypt. **Devidutta Parikar**, the name was enough to prove the stature of the man in his field. A distinguished archaeologist and a notable expert in cryptic lexicography, a man revered by fellow colleagues and general public alike. But taking on the great and mighty Sahara is not a easy task even for a man of such strong caliber as Devidutta Parikar. 

@@ -17,7 +17,10 @@ import ListView from '~/components/views/ListView.astro'
   bgType={frontmatter.bgType}
   ogImage={frontmatter.ogImage}
 >
+
   <StandardLayout title={frontmatter.title} subtitle={frontmatter.subtitle}>
+
+  <p> <span class="font-mono op-50">&gt; </span> If you would prefer to read my tech-centric blog, here's my <a class="cursor-pointer font-mono op-50! hover:op-75!" href="https://medium.com/@0xJeevs" target="_blank"> medium link</a></p>
     <ListView pageToc={frontmatter.toc} collectionType="blog" tag={null} />
   </StandardLayout>
 </BaseLayout>
