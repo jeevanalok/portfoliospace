@@ -9,6 +9,7 @@ ogImage: true
 tags:
   - personal
   - braindump
+  - creative
 ---
 
 
