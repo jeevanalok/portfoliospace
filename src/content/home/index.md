@@ -4,6 +4,9 @@ I’m Jeevan  — a tech tinkerer that sometimes manages to solve problems here 
 
 This cozy corner is where my thoughts go live, stories are woven, my projects take shape, and ideas get an upgrade. From tech insights and work-in-progress tinkering to random musings and the occasional deep dive — it’s all happening here. Check out what I’m building, writing, or just thinking about. My resume and projects are around too if you're curious! ✨
 
+> Knowledge is knowing tomato is a fruit,
+Wisdom is knowing not to put it in a fruit salad,
+Philosophy is wondering if ketchup is
 
 ---
 
