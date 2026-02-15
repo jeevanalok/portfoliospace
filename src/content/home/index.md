@@ -6,7 +6,7 @@ This cozy corner is where my thoughts go live, stories are woven, my projects ta
 
 > Knowledge is knowing tomato is a fruit,
 Wisdom is knowing not to put it in a fruit salad,
-Philosophy is wondering if ketchup is
+Philosophy is wondering if ketchup is a smoothie
 
 ---
 

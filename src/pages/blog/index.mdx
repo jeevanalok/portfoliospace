@@ -10,6 +10,8 @@ ogImage: false
 import BaseLayout from '~/layouts/BaseLayout.astro'
 import StandardLayout from '~/layouts/StandardLayout.astro'
 import ListView from '~/components/views/ListView.astro'
+import TabbedLayout from '~/layouts/TabbedLayout.astro'
+import Link from '~/components/base/Link.astro'
 
 <BaseLayout
   title={frontmatter.title}
@@ -18,9 +20,10 @@ import ListView from '~/components/views/ListView.astro'
   ogImage={frontmatter.ogImage}
 >
 
-  <StandardLayout title={frontmatter.title} subtitle={frontmatter.subtitle}>
+  <TabbedLayout subtitle={frontmatter.subtitle}>
 
-  <p> <span class="font-mono op-50">&gt; </span> If you would prefer to read my tech-centric blog, here's my <a class="cursor-pointer font-mono op-50! hover:op-75!" href="https://medium.com/@0xJeevs" target="_blank"> medium link</a></p>
+  <p> <span class="font-mono op-50">&gt; </span> If you would prefer to read my tech-centric blog, here's my  <a class="cursor-pointer font-mono op-50! hover:op-75!" href="https://medium.com/@0xJeevs" target="_blank"> medium link</a> or you can filter by <a class="cursor-pointer font-mono op-50! hover:op-75!" href="/tags"> tags</a></p>
+
     <ListView pageToc={frontmatter.toc} collectionType="blog" tag={null} />
-  </StandardLayout>
+  </TabbedLayout>
 </BaseLayout>

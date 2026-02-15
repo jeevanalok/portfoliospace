@@ -4,6 +4,13 @@ Take a glance at my work, and see if something sparks your curiosity!
 
 ## Work experience
 
+### Building in stealth 
+
+**Operating Quietly**
+_2026 - Current_
+
+Good work takes time. Great work takes silence.
+
 ### Ritumbhara Hotel & Resort
 
 **Full Stack Developer**
@@ -40,12 +47,16 @@ _September 2022 – February 2023_
 
 Tech Stack: **`React.js, Tailwind CSS, Ant Design`**
 
+
+
 ---
 > [!TIP]  So I have your attention <a href="https://gray-terese-72.tiiny.site/"> Click here to view my resume!</a>
 
 ---
-
+If you’re browsing and something here sparks a thought — a product idea, a collaboration, or even just curiosity — that’s a good sign. I build things that are meant to grow, and I enjoy working with people who think the same way.
 <p>
-If you are curious and want to connect with me , just drop me a mail
+If you’d like to see the full story, my resume is just a click away. And if you’d rather skip the formalities, drop me a mail at
   <a ml-1.5 inline-block op-75 hover:op-100 href="mailto:inventorjeevan+portfolio@gmail.com" target="_blank"    aria-label="Find me on GitHub (external link)"><span i-simple-icons-gmail></span> inventorjeevan@gmail.com</a>
 </p>
+
+Good ideas deserve good conversations.

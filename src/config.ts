@@ -13,13 +13,6 @@ export const SITE: Site = {
 export const UI: Ui = {
   internalNavs: [
     {
-      path: '/blog',
-      title: 'Blog',
-      displayMode: 'textToIconOnMobile',
-      text: 'Blog',
-      icon: 'i-ri-article-line',
-    },
-    {
       path: '/about',
       title: 'About Me',
       displayMode: 'textToIconOnMobile',
@@ -27,11 +20,11 @@ export const UI: Ui = {
       icon: 'i-simple-icons-aboutdotme',
     },
     {
-      path: '/tags',
-      title: 'Tags',
+      path: '/blog',
+      title: 'Blog',
       displayMode: 'textToIconOnMobile',
-      text: 'Tags',
-      icon: 'i-mdi-tags',
+      text: 'Blog',
+      icon: 'i-ri-article-line',
     },
     {
       path: '/projects',
@@ -41,28 +34,16 @@ export const UI: Ui = {
       icon: 'i-ri-lightbulb-line',
     },
   ],
-  socialLinks: [
-    {
-      link: 'https://github.com/jeevanalok/',
-      title: 'Jeevanalok on Github',
-      displayMode: 'iconHiddenOnMobile',
-      icon: 'i-uil-github-alt',
-    },
-    {
-      link: 'https://www.linkedin.com/in/jeevan-alok-mohanty-b9143a22b/',
-      title: `${SITE.author} on LinkedIn`,
-      displayMode: 'iconHiddenOnMobile',
-      icon: 'i-uil-linkedin',
-    },
-  ],
+  socialLinks: [],
   navBarLayout: {
     left: [],
     right: ['internalNavs', 'socialLinks', 'searchButton', 'themeButton'],
   },
   tabbedLayoutTabs: [
-    { title: 'AstroBlog', path: '/feeds' },
-    { title: 'AstroStreams', path: '/streams' },
-    { title: 'Notes', path: '/notes' },
+    { title: 'Blog', path: '/blog' },
+    { title: 'Streams', path: '/streams' },
+    // { title: 'AstroBlog', path: '/feeds' },
+    // { title: 'Notes', path: '/notes' },
   ],
   maxGroupColumns: 3,
   showGroupItemColorOnHover: true,
