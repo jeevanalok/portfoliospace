@@ -139,6 +139,13 @@ const projectSchema = z.object({
   name: z
     .string()
     .describe('**Requirde**. Name of the project to be displayed.'),
+  icon: z
+    .string()
+    .default('')
+    .describe(
+      'Specifies the icon for the project. If using an icon from the [IcoMoon free set](https://icomoon.io/#icons-icomoon), enter the icon name (e.g., `i-ic-baseline-code`). To use a custom icon, provide the full filename from `/public/icons/` (e.g., `my-icon.svg`). If not needed, leave the field as an empty string or delete it.'
+    )
+    .optional(),
   link: z
     .string()
     .url('Invalid url.')
